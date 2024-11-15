@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distrito de Calapuja: Reporta tus Mejoras</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script> <!-- EmailJS script -->
+</head>
+<body>
+    <header>
+        <h1>Distrito de Calapuja: ¡Reporta tus Mejoras!</h1>
+    </header>
+
+    <div class="main-container">
+        <button id="reportButton" class="report-btn">¡Reporta tu Problema!</button>
+    </div>
+
+    <footer>
+        <p>Creado por Lionel Edersson Aragos Illanes</p>
+    </footer>
+
+    <!-- Ventana emergente (Popup) -->
+    <div id="reportPopup" class="popup">
+        <div class="popup-content">
+            <h2>Formulario de Reporte</h2>
+            <form id="reportForm">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="dni">DNI:</label>
+                <input type="text" id="dni" name="dni" required>
+
+                <label for="address">Dirección:</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="problem">Descripción del Problema:</label>
+                <textarea id="problem" name="problem" required></textarea>
+
+                <button type="submit">Enviar Reporte</button>
+            </form>
+            <button id="closePopup" class="close-btn">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
